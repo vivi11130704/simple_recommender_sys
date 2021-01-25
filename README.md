@@ -33,34 +33,34 @@ The model is trained on a local desktop and pickled to be used in a production e
 
 # File References
 
-###Model Development:
+**Model Development:**
 "/development/Recommender System.ipynb"
 
 This notebook illustrates a step-by-step walk-through of the model development process. It also discusses the limitations and the future possible developments.
 
-###Data Folder:
+**Data Folder:**
 "/src/data"
 
 "recommendations_take_home.csv" is the source data. 
 
 "products.csv" is a dataset generates from the "recommendations_take_home.csv" which contains non-duplicate product information.
 
-###Saved Model Folder:
+**Saved Model Folder:**
 "/src/model"
 
 "item_ids.pickle", "tfidf_feature.pickle" and "tfidf_matrix.pickle" are product profiles that are created by the "Recommender System.ipynb" notebook.
 
 "most_popular_list.pickle" includes the top 20 most popular items for new users.
 
-###Model Code:
+**Model Code:**
 "/src/utils/utils.py"
 
 The code in "utils.py" is very similar as the "Recommender System.ipynb" except that it has been adjusted for better model deployment.
 
-###API Creation:
+**API Creation:**
 "run.py"
 
 Create a flask API to consume inputs and generates model outputs.
 
-###Docker Deployment
+**Docker Deployment**
 "Dockerfile" and "requirements.txt"
