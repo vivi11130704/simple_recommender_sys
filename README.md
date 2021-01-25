@@ -57,6 +57,9 @@ This notebook illustrates a step-by-step walk-through of the model development p
 
 The code in "utils.py" is very similar as the "Recommender System.ipynb" except that it has been adjusted for better model deployment.
 
+Note that the product profiles are fixed and are being read directly from pickled models, whereas the user profile is calculated on the fly based on the transaction records.
+This is designed on purpose as in production environment, product profiles can be created in advance but user profiles should be updated as soon as a new transaction is made.
+
 **API Creation:**
 "run.py"
 
